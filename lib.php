@@ -289,6 +289,8 @@ function theme_boost_union_get_extra_scss($theme) {
     // Setting: Mark external links.
     $content .= theme_boost_union_get_scss_to_mark_external_links($theme);
 
+    $content .= theme_boost_union_get_scss_for_resizable_drawers($theme);
+
     return $content;
 }
 

@@ -1311,6 +1311,23 @@ if ($hassiteconfig || has_capability('theme/boost_union:configure', context_syst
         $setting = new admin_setting_configselect($name, $title, $description, THEME_BOOST_UNION_SETTING_SELECT_NO, $yesnooption);
         $tab->add($setting);
 
+        $name = 'theme_boost_union/resizabledrawers';
+        $title = get_string('resizabledrawers', 'theme_boost_union', null, true);
+        $setting = new admin_setting_heading($name, $title, null);
+        $tab->add($setting);
+
+        $name = 'theme_boost_union/leftdrawerresizable';
+        $title = get_string('leftdrawerresizablesetting', 'theme_boost_union', null, true);
+        $description = get_string('leftdrawerresizablesetting_desc', 'theme_boost_union', null, true);
+        $setting = new admin_setting_configselect($name, $title, $description, THEME_BOOST_UNION_SETTING_SELECT_NO, $yesnooption);
+        $tab->add($setting);
+
+        $name = 'theme_boost_union/rightdrawerresizable';
+        $title = get_string('rightdrawerresizablesetting', 'theme_boost_union', null, true);
+        $description = get_string('rightdrawerresizablesetting_desc', 'theme_boost_union', null, true);
+        $setting = new admin_setting_configselect($name, $title, $description, THEME_BOOST_UNION_SETTING_SELECT_NO, $yesnooption);
+        $tab->add($setting);
+
         // Add tab to settings page.
         $page->add($tab);
 

@@ -411,6 +411,15 @@ $string['showsitehomerighthandblockdraweronfirstloginsetting_desc'] = 'With this
 // ... ... Setting: Show right-hand block drawer of site home on guest login.
 $string['showsitehomerighthandblockdraweronguestloginsetting'] = 'Show right-hand block drawer of site home on guest login';
 $string['showsitehomerighthandblockdraweronguestloginsetting_desc'] = 'With this setting, the right-hand block drawer of site home will be displayed in its expanded state by default. This only applies to users who log in as a guest.';
+// ... Section: Resizable drawers.
+$string['resizabledrawers'] = 'Resizable drawers';
+// ... ... Setting: Make left drawer resizable.
+$string['leftdrawerresizablesetting'] = 'Make left drawer resizable';
+$string['leftdrawerresizablesetting_desc'] = 'With this setting you can enable the left drawer to be resizable.';
+// ... ... Setting: Make right drawer resizable.
+$string['rightdrawerresizablesetting'] = 'Make right drawer resizable';
+$string['rightdrawerresizablesetting_desc'] = 'With this setting you can enable the right drawer to be resizable.';
+
 
 // Settings: Links tab.
 $string['linkstab'] = 'Links';

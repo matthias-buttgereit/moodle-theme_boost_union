@@ -1394,3 +1394,36 @@ function theme_boost_union_get_scss_to_mark_external_links($theme) {
     }
     return $scss;
 }
+
+function theme_boost_union_get_scss_for_resizable_drawers($theme) {
+    $scss = "";
+
+    $left_resizable = ($theme->settings->leftdrawerresizable == THEME_BOOST_UNION_SETTING_SELECT_YES);
+    $right_resizable = ($theme->settings->rightdrawerresizable == THEME_BOOST_UNION_SETTING_SELECT_YES);
+
+    if ($left_resizable) {
+        $scss .= '#theme_boost-drawers-courseindex::after {
+            content: "";
+            position: absolute;
+            right: -0.5em;
+            width: 1em;
+            height: 100%;
+            transform: translateY(-100%);
+            cursor: ew-resize;
+        }';
+    }
+
+    if ($right_resizable) {
+        $scss .= '#theme_boost-drawers-blocks::after {
+            content: "";
+            position: absolute;
+            left: -0.5em;
+            width: 1em;
+            height: 100%;
+            transform: translateY(-100%);
+            cursor: ew-resize;
+        }';
+    }
+
+    return $scss;
+}
